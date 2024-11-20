@@ -5,20 +5,16 @@ This repository is made in order to analyze and visualyze the phase space data f
 
 ## Folder Structure
 The folder is made within this structure
-PhaseSpaceTOPAS-Visualization
-+-- data
-|   +-- params
-|   |
-|   +-- input
-|   |   +-- 100_138-000_MAT1_(-08-5688)_BFWP_6060.phsp
-|   |   +-- 100_140-000_MAT1_(-08-5688)_BFWP_6060.phsp
-|   |
-|   +-- output
-|       +-- 100_138-000_MAT1_(-08-5688)_BFWP_6060.header
-|       +-- 100_140-000_MAT1_(-08-5688)_BFWP_6060.header
-|
-+ src
-  +-- PhaseSpaceVisualization.ipynb
+    PhaseSpaceTOPAS-Visualization
+        data
+            parameter
+                put the topas code here
+            input
+                put the `.phsp` file here
+            output
+                store the output from `PhaseSpaceVisualization.ipynb`
+        src
+            code `PhaseSpaceVisualization.ipynb`
 
   ## Nomenclature for the `.phsp` Files
         Particle in orginal history: XXX
