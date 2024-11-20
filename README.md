@@ -5,15 +5,15 @@ This repository is made in order to analyze and visualyze the phase space data f
 
 ## Folder Structure
     The folder is made within this structure
-       - PhaseSpaceTOPAS-Visualization
-            - data
-                - parameter
+       * PhaseSpaceTOPAS-Visualization
+            * data
+                * parameter
                     put the topas code here
-                - input
+                * input
                     put the `.phsp` file here
-                - output
+                * output
                     store the output from `PhaseSpaceVisualization.ipynb`
-            - src
+            * src
                 code `PhaseSpaceVisualization.ipynb`
 
   ## Nomenclature for the `.phsp` Files
