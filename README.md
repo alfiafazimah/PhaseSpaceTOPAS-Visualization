@@ -18,42 +18,40 @@ This repository is made in order to analyze and visualyze the phase space data f
 
   ## Nomenclature for the `.phsp` Files
         Particle in orginal history: XXX
-            Proton = 1 0 0
-            Photon = 0 2 0
-            Electron = 0 0 3
+            Proton
+            Photon 
+            Electron 
         
         Energy of the original history:
             XXX-XXX = 123,456
                 note:     
-                    MeV for 1 3 (Proton dn Electron)
-                    MV for 2 (photon)
+                    MeV for charged particle
+                    MV for photon
   
         Material of PHSP:
-            MATX = MAT_KodeMaterial
-            Kode Material Voxel:
-            1 = Udara
-            2 = Air (Water)
-            3 = Metal
-            4 = Spesifik material
-            5 = Spesifik material
+            Example: 
+            Udara
+            Air (Water)
+
   
         Position Z of PHSP from 0,0,0 of the geometry (cm):
             Positive Z direction: (+XX_XX)
             Negative Z direction: (-XX_XX)
   
-        Location of PHSP within a beamline component:
-            (Phsp is placed after these component)
-            XXXX = component code
-            If not within the beamline component = XXXX
-            The XXXX will be adjusted by the beamline component in the model
+        BeforeAfter:
+            Before = if the phase space is used to analyze the beam before a component
+            After = if the phase space is used to analyze the beam after a component
+
+        Component:
+            Naming based on the component name
   
         The size of PHSP:
-            Ukuran PHSP dalam X.Y
-            Contoh 30x30=3030
+            Size of PHSP in X.Y (cm)
+            Example 30x30=3030
   
   Example:
-  Proton beam with 67.5 MeV scored in a PHSP, the material is air, in the position Z= -13.35cm 
-  100_067-500_1-0_MAT1_-13_35-BFWP3030
+  Proton beam with 67.5 MeV scored in a PHSP, the material is air, in the position Z= -13.35cm before water phantom
+  Proton_67,5MeV_Udara_(-13_35)_Before-Before_WaterPhantom_Defult_3030
   
 ## How to Use
 1. Place the `.phsp` files in the `data/input/` folder. Note that the name of the `.phsp` files should be suitable with the nomenclature guideline
