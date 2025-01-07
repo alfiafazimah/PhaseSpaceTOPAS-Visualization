@@ -22,13 +22,5 @@ Data phsp dari hasil simulasi menjadi input dalam skrip ini.
 Sebagai contoh, beberapa data phsp dapat tersedia di subfolder [phsp](https://github.com/alfiafazimah/PhaseSpaceTOPAS-Visualization/tree/main/example%20data/phsp) pada folder [example data](https://github.com/alfiafazimah/PhaseSpaceTOPAS-Visualization/tree/main/example%20data)
 
 ## Struktur Folder
-    Struktur folder untuk kode ini adalah sebagai berikut:
-        Folder utama:
-        data
-            input
-                data phsp disimpan pada folder ini
-            parameter
-                file parameter disimpan pada folder ini
-            output
-        src
-            kode skrip python (jupyter notebook) disimpan pada folder ini
+Struktur folder untuk kode ini adalah sebagai berikut:
+![struktur folder](image.png)
