@@ -32,4 +32,5 @@ Setelah manajemen folder dan file phsp, maka visualisasi dapat dilakukan.
 Visualisasi dapat dilakukan dengan menjalankan skrip python (jupyter notebook) yang tersedia di folder [src](https://github.com/alfiafazimah/PhaseSpaceTOPAS-Visualization/tree/main/src). 
 Hasil visualisasi adalah berupa gambar yang tersimpan di subfolder `output` pada `folder utama` di komputer pengguna.
 Sebagai contoh, berikut adalah gambar hasil visualisasi data phsp dengan menggunakan repositori ini.
+
 ![contoh phsp](image-2.png)
