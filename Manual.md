@@ -24,7 +24,7 @@ Sebagai contoh, beberapa data phsp dapat tersedia di subfolder [phsp](https://gi
 ## Struktur Folder
 Struktur folder untuk kode ini adalah sebagai berikut:
 
-![struktur folder](image-1.png)
+![struktur folder](image-3.png)
 
 Setelah manajemen folder dan file phsp, maka visualisasi dapat dilakukan.
 
@@ -33,4 +33,4 @@ Visualisasi dapat dilakukan dengan menjalankan skrip python (jupyter notebook) y
 Hasil visualisasi adalah berupa gambar yang tersimpan di subfolder `output` pada `folder utama` di komputer pengguna.
 Sebagai contoh, berikut adalah gambar hasil visualisasi data phsp dengan menggunakan repositori ini.
 
-![contoh phsp](image-2.png)
+![contoh phsp](<Material Variation for Collimator.jpeg>)
