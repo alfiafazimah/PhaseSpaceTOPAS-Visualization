@@ -5,5 +5,7 @@
 
  ## Simulasi Monte Carlo TOPAS
     Data phsp diperoleh melalui simulasi terapi proton University of California San Fransisco an Eye Treatment Facility (UCSFETF) di TOPAS.
-    
+    File parameter untuk menghasilkan data phsp dapat diakses di subfolder [file parameter](https://github.com/alfiafazimah/PhaseSpaceTOPAS-Visualization/tree/main/example%20data/file%20parameter) pada folder [example data](https://github.com/alfiafazimah/PhaseSpaceTOPAS-Visualization/tree/main/example%20data)
+
+    Hasil simulasi berupa data phsp yang terdiri atas file berekstensi `.header` dan `.phsp`
     
