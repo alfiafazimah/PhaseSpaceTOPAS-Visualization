@@ -1,0 +1,23 @@
+includeFile = UCSF_Beamline_Base.txt UCSF_WaterPhantomPHSP3030.txt 
+
+# ===============================================#
+# WaterColumn thickness adjustment to define Range
+# ===============================================#
+Ge/WaterColumn/Thickness = 4.0 mm
+
+# ===============================================#
+# Execution mode setting. non-4D
+# ===============================================#
+i:So/Default/NumberOfHistoriesInRun = 15625
+
+b:Ts/ShowCPUTime = "True"
+
+Ts/PauseBeforeQuit = "False"
+
+s:Sc/PhaseSpaceAtVacFilm/Quantity                    = "PhaseSpace"
+b:Sc/PhaseSpaceAtVacFilm/OutputToConsole             = "True"
+s:Sc/PhaseSpaceAtVacFilm/Surface                     = "VacFilm/ZPlusSurface"
+s:Sc/PhaseSpaceAtVacFilm/OutputType                  = "ASCII" # ASCII, Binary, Limited or ROOT
+s:Sc/PhaseSpaceAtVacFilm/IfOutputFileAlreadyExists   = "Increment" # "Exit", "Overwrite" or "Increment"
+s:Sc/PhaseSpaceAtVacFilm/OutputFile                  = "Partikel_Energy MeV_Material_Posisi_BeforeAfter_Komponen_Default_6060"
+i:Sc/PhaseSpaceAtVacFilm/OutputBufferSize            = 1000

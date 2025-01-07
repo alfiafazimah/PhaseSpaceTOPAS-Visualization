@@ -1,0 +1,69 @@
+includeFile = UCSF_DefaultParameters.txt 
+
+d:Ge/WP_Constants/SizeX         = 15.0 cm
+d:Ge/WP_Constants/SizeY         = 15.0 cm
+d:Ge/WP_Constants/SizeZ         = 15.0 cm
+#WallThickness = 1.0668 mm
+d:Ge/WP_Constants/WallThickness = 2.1336 mm
+d:Ge/WP_Constants/BoxSizeX  = Ge/WP_Constants/SizeX + Ge/WP_Constants/WallThickness cm
+d:Ge/WP_Constants/BoxSizeY  = Ge/WP_Constants/SizeY + Ge/WP_Constants/WallThickness cm
+d:Ge/WP_Constants/BoxSizeZ  = Ge/WP_Constants/SizeZ + Ge/WP_Constants/WallThickness cm #15+2.1336=17,1336
+d:Ge/WP_Constants/ZShift    = -0.5 * Ge/WP_Constants/BoxSizeZ cm #=-8,5668
+
+d:Ge/WaterPhantomBox/ZShiftFromISO  = 0.0 cm
+
+##########################################
+# Sensitive area filled with Water
+##########################################
+s:Ge/WaterPhantomBox/Type="TsBox"
+s:Ge/WaterPhantomBox/Parent="World"
+s:Ge/WaterPhantomBox/Material="G4_PLEXIGLASS"
+d:Ge/WaterPhantomBox/HLX= 0.5 * Ge/WP_Constants/BoxSizeX cm #17,1336cm
+d:Ge/WaterPhantomBox/HLY= 0.5 * Ge/WP_Constants/BoxSizeY cm
+d:Ge/WaterPhantomBox/HLZ= 0.5 * Ge/WP_Constants/BoxSizeZ cm
+d:Ge/WaterPhantomBox/TransX= 0. cm
+d:Ge/WaterPhantomBox/TransY= 0. cm
+d:Ge/WaterPhantomBox/TransZ=  Ge/WP_Constants/ZShift + Ge/WaterPhantomBox/ZShiftFromISO cm 
+d:Ge/WaterPhantomBox/RotX=0. deg
+d:Ge/WaterPhantomBox/RotY=0. deg
+d:Ge/WaterPhantomBox/RotZ=0. deg
+s:Ge/WaterPhantomBox/Color="red"
+
+#with sign (+: toward beam, -:backward beam)
+
+s:Ge/WaterPhantom/Type="TsBox"
+s:Ge/WaterPhantom/Parent="WaterPhantomBox"
+s:Ge/WaterPhantom/Material="G4_WATER"
+d:Ge/WaterPhantom/HLX= 0.5 * Ge/WP_Constants/SizeX cm
+d:Ge/WaterPhantom/HLY= 0.5 * Ge/WP_Constants/SizeY cm
+d:Ge/WaterPhantom/HLZ= 0.5 * Ge/WP_Constants/SizeZ cm
+d:Ge/WaterPhantom/TransX= 0. cm
+d:Ge/WaterPhantom/TransY= 0. cm
+d:Ge/WaterPhantom/TransZ= 0. cm
+d:Ge/WaterPhantom/RotX=0. deg
+d:Ge/WaterPhantom/RotY=0. deg
+d:Ge/WaterPhantom/RotZ=0. deg
+s:Ge/WaterPhantom/Color="red"
+i:Ge/WaterPhantom/XBins=1 
+i:Ge/WaterPhantom/YBins=1 
+i:Ge/WaterPhantom/ZBins=1 
+
+
+##########################################
+# phasespace in front of the Water phantom
+##########################################
+#d:Ge/VacFilm/ZShift  = Ge/WP_Constants/ZShift cm
+s:Ge/VacFilm/Type     = "TsBox"
+s:Ge/VacFilm/Parent   = "World"
+s:Ge/VacFilm/Material = "G4_AIR"
+d:Ge/VacFilm/HLX      = 30 cm
+d:Ge/VacFilm/HLY      = 30 cm
+d:Ge/VacFilm/HLZ      = 0.05 cm
+d:Ge/VacFilm/TransX   = 0. cm
+d:Ge/VacFilm/TransY   = 0. cm
+d:Ge/Vacfilm/TransZ   = 2.0 * Ge/VacFilm/HLZ cm
+d:Ge/VacFilm/RotX     = 0. deg
+d:Ge/VacFilm/RotY     = 0. deg
+d:Ge/VacFilm/RotZ     = 0. deg
+s:Ge/VacFilm/Color    = "white"
+
