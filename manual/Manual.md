@@ -14,6 +14,7 @@ File parameter untuk menghasilkan data phsp dapat diakses di subfolder [file par
     `UCSF_Beamline_Base.txt`
     `UCSF_DefaultParameters.txt`
     `UCSF_WaterPhamtomPHSP3030.txt`
+    
  Variasi geometri, energi, maupun material komponen pembentuk berkas dapat disesuaikan pada saat menjalankan file parameter tersebut.
  Hasil simulasi berupa data phsp yang terdiri atas file berekstensi `.header` dan `.phsp`
 
