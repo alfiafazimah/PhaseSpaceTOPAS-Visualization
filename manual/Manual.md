@@ -19,6 +19,7 @@ File parameter untuk menghasilkan data phsp dapat diakses di subfolder [file par
 
 ## Data Phsp
 Data phsp dari hasil simulasi menjadi input dalam skrip ini.
+Data phsp harus dipastikan memiliki penamaan yang sesuai dengan nomenklatur yang telah dijelaskan pada [Read Me](https://github.com/alfiafazimah/PhaseSpaceTOPAS-Visualization/blob/main/README.md) repositori ini.
 Sebagai contoh, beberapa data phsp dapat tersedia di subfolder [phsp](https://github.com/alfiafazimah/PhaseSpaceTOPAS-Visualization/tree/main/example%20data/phsp) pada folder [example data](https://github.com/alfiafazimah/PhaseSpaceTOPAS-Visualization/tree/main/example%20data)
 
 ## Struktur Folder
