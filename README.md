@@ -30,8 +30,8 @@ This repository is made in order to analyze and visualyze the phase space data f
   
         Material of PHSP:
             Example: 
-            Udara
-            Air (Water)
+            Air
+            Water
 
   
         Position Z of PHSP from 0,0,0 of the geometry (cm):
