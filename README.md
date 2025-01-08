@@ -57,7 +57,8 @@ This repository is made in order to analyze and visualyze the phase space data f
 1. Place the `.phsp` files in the `data/input/` folder. Note that the name of the `.phsp` files should be suitable with the nomenclature guideline
 2. Run the `PhaseSpaceVisualization.ipynb` notebook in the `src` folder.
 3. Processed results will appear in the `data/output/` folder.
+4. More detail of manual instruction in Bahasa is available in [here](https://github.com/alfiafazimah/PhaseSpaceTOPAS-Visualization/blob/main/manual/Manual.md)
 
 ## Requirements
 - Python 3.9 or later
-- Libraries: `topas2numpy`, `pandas`, `numpy`
+- Libraries: `topas2numpy`, `pandas`, `numpy`, `matplotlip`, `plotly`
